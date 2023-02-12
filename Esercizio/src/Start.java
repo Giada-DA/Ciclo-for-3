@@ -4,12 +4,9 @@ public class Start {
                 "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
         };
         for(int i = 0; i < arr.length; i++){
-            String value = arr[i];
-
             if(i % 2 == 0){
-                String theValue = arr[i].toUpperCase();
-                System.out.println("giorno: " + theValue);
-            }else System.out.println("giorno: " + value);
+                System.out.println("giorno: " + arr[i]);
+            }else System.out.println("giorno: " + arr[i].toUpperCase());
         }
     }
 }
