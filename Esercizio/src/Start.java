@@ -3,10 +3,12 @@ public class Start {
         String[] arr = new String[]{
                 "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
         };
-        for(int i = 0; i < arr.length; i++){
-            if(i % 2 == 0){
-                System.out.println("giorno: " + arr[i]);
-            }else System.out.println("giorno: " + arr[i].toUpperCase());
+        for(int i = 0; i < arr.length;){
+            arr[i] = arr[i].toUpperCase();
+            i += 2;
+        }
+        for(String giorno: arr){
+            System.out.println(giorno);
         }
     }
 }
